@@ -1,11 +1,9 @@
 <% @teams.each do |team| %>
-  <div>
-    <h1><%= team.name %></h1><br />
+  <div class="team-box col-xs-10 offset-xs-1">
+    <h1><%= team.name %></h1>
     <i><%= team.location %></i><br />
-    <p><%= team.stadium %></p><br />
+    <p><%= team.stadium %></p>
     <p><%= team.description %></p><br />
   </div>
-
-  <hr />
 
   <% end %>
