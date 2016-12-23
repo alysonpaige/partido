@@ -1,1 +1,11 @@
-<h1>Welcome to my Partido app!</h1>
+<% @teams.each do |team| %>
+  <div>
+    <h1><%= team.name %></h1><br />
+    <i><%= team.location %></i><br />
+    <p><%= team.stadium %></p><br />
+    <p><%= team.description %></p><br />
+  </div>
+
+  <hr />
+
+  <% end %>
